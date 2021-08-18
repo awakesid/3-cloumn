@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --transparentwhite: hsl(0, 0%, 100%, 0.75);
+    --veryligthgray: hsl(0, 0%, 95%); 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryligthgray);
+    
+} 
+.main{
+    height:88.5rem;
+    width: 20.9375rem;
+    margin: 4.5rem 1rem 4.5rem 1rem; 
+} 
+.first{
+    background-color: var(--Bright-orange);
+    border-radius: 0.7rem 0.7rem 0 0;
+    position: relative;
+}
+.second{
+    background-color: var(--Darkcyan);
+    position: relative;
+}
+.third{
+    background-color: var(--Verydarkcyan);
+    border-radius: 0 0 0.7rem 0.7rem;
+    position: relative;
+}
+.first div,.second div,.third div{
+    height: 100%;
+    padding: 2.9rem 2.9rem 2.5rem 2.9rem;
+
+}
+.first button{
+    
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Bright-orange);
+    background-color: var(--veryligthgray);
+    border: none;
+    padding: 0.85rem 2.4rem ;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0.3rem 0.7rem 0 0;
+}
+.second button{
+    
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Darkcyan);
+    background-color: var(--veryligthgray);
+    border: none;
+    padding: 0.85rem 2.4rem ;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0.3rem 0.7rem 0 0;
+}
+.third button{
+   
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 2rem 11.2px 11.2px 0;   
+    color: var(--Verydarkcyan);
+    background-color: var(--veryligthgray);
+    border: none;
+    padding: 0.85rem 2.4rem ;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0.3rem 0.7rem 0 0;  
+}
+
+
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6rem;
+    color: var(--transparentwhite);
+    font-size: small;
+    margin-bottom: 0.8rem;
+}
+.w{
+    display: none;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.7rem;
+    color: var(--veryligthgray);
+}
+.attribution{
+    display: none;
+}
+
+@media only screen and (min-width:700px){
+    body{
+        height: 100vh;
+    }
+    .main{
+    height:30rem;
+    width: 65%;
+    margin: 4.5rem 1rem 4.5rem 1rem; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .first{
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .third{
+        border-radius:0 0.5rem 0.5rem 0;
+    }
+    p{
+        margin-bottom: 3.2rem;
+        line-height: 2;
+    }
+    .a{
+        display: none;
+    }
+    .w{
+        display: block;
+    }
+
+    /* .first button, .second button, .third button{
+        position: fixed;
+    } */
+    .first button:hover{
+        background-color: var(--Bright-orange);     
+        border: 0.13rem solid var(--veryligthgray);
+        color: var(--veryligthgray);
+    }
+    .second button:hover{
+        background-color: var(--Darkcyan);     
+        border: 0.13rem solid var(--veryligthgray);
+        color: var(--veryligthgray);
+    }
+    .third button:hover{
+        background-color: var(--Verydarkcyan);
+
+        border: 0.13rem solid var(--veryligthgray);
+        color: var(--veryligthgray);
+    }
+    .attribution{
+        position: absolute;
+        bottom: 0;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1rem;
+        
+    }
+
+}
+
+
+
+
+
+    
+
+
